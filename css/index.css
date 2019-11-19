@@ -131,10 +131,16 @@ table {
 }
 html {
   font-size: 62.5%;
+  height: 100vh;
+  background-color: black;
+  color: white;
 }
 html,
 body {
   font-family: 'Open Sans', sans-serif;
+}
+body {
+  height: 100vh;
 }
 h1,
 h2,
@@ -164,35 +170,41 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1000px;
   width: 100%;
+  height: 90vh;
   margin: 0 auto;
 }
 nav {
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 10px 10px 10px 10px;
-  border-bottom: solid lightgray 1px;
+  border-bottom: solid lightgray 0.5px;
+  height: 10vh;
 }
 .nav {
-  width: 800px;
+  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 10vh;
 }
 .nav-left {
   width: 50%;
+  margin-left: 10vw;
   display: flex;
   flex-direction: row;
-  align-content: center;
+  align-items: center;
   justify-content: flex-start;
-  vertical-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  height: 10vh;
 }
 .nav-right {
   width: 50%;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: flex-end;
+  height: 10vh;
+  margin-right: 10vw;
 }
 h1 {
   display: flex;
@@ -202,21 +214,26 @@ h1 {
 }
 a {
   text-decoration: none;
-  margin: 20px;
-  padding-right: 10px;
-  color: black;
+  padding-right: 5vw;
+  color: white;
   font-size: 14px;
 }
 .footer {
   width: 100%;
-  border-top: 1px solid black;
-  background: lightgray;
+  border-top: 0.5px solid lightgray;
+  background: black;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer p {
   text-align: center;
-  color: #212529;
   font-size: 1.6rem;
-  padding: 20px;
+  color: white;
+}
+.container-home {
+  height: 80vh;
 }
 .home .cta-img {
   padding-top: 20px;
@@ -226,22 +243,27 @@ a {
   border-radius: 10px;
 }
 .home .content-section {
-  margin: 50px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  height: 80vh;
 }
 .home .content-section .text-content {
-  width: 48%;
-  padding-right: 1%;
+  width: 50%;
+  height: 80vh;
+  padding-left: 10vw;
+  padding-top: 10vh;
 }
 .home .content-section .img-content {
-  width: 48%;
-  padding-left: 1%;
+  width: 50%;
+  height: 80vh;
+  background-image: url(../img/Berlin4.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .home .content-section .img-content img {
-  border-radius: 10px;
+  border-radius: 0px;
 }
 .home .inverse-content {
   padding-bottom: 50px;
