@@ -154,16 +154,14 @@ h1 {
 }
 h2 {
   font-size: 3.2rem;
-  padding-bottom: 10px;
 }
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
 p {
-  line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
+  padding-top: 7vh;
 }
 img {
   max-width: 100%;
@@ -216,7 +214,7 @@ a {
   text-decoration: none;
   padding-right: 5vw;
   color: white;
-  font-size: 14px;
+  font-size: 1.6rem;
 }
 .footer {
   width: 100%;
@@ -254,6 +252,12 @@ a {
   height: 80vh;
   padding-left: 10vw;
   padding-top: 10vh;
+}
+.home .content-section .text-content button {
+  margin-top: 7vh;
+  font-size: 2rem;
+  border-radius: 7px;
+  padding: 1vh;
 }
 .home .content-section .img-content {
   width: 50%;
