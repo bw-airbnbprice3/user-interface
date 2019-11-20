@@ -274,14 +274,15 @@ a {
   padding-left: 10vw;
   padding-top: 10vh;
 }
-.home .content-section .text-content button {
-  margin-top: 7vh;
+.home .content-section .button-link {
   font-size: 2rem;
   border-radius: 7px;
+  background-color: #885B5F;
   padding: 1vh;
 }
 .home .content-section .text-content p {
   padding-top: 7vh;
+  padding-bottom: 10vh;
 }
 .home .content-section .img-content {
   width: 50%;
