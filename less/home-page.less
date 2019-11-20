@@ -1,3 +1,33 @@
+.container-home{
+    height: 80vh;
+}
+
+.container-about{
+    height: 80vh;
+    width: 100vw;
+    padding-top: 10vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.about-content{
+    width: 50vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vh;
+}
+
+.about-content img{
+   height: 5vh;
+}
+
+.about-content a{
+    padding: 0;
+ }
+
 .home {
 
     .cta-img{
@@ -9,25 +39,42 @@
     }
 
   .content-section {
-    margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 80vh;
 
    
     
     .text-content {
-      width: 48%;
-      padding-right: 1%;
+      width: 50%;
+      height: 80vh;
+      padding-left: 10vw;
+      padding-top: 10vh;
+    }
+
+    .button-link{
+        font-size: 2rem;
+        border-radius: 7px;
+        background-color: #885B5F;
+        padding: 1vh;
+    }
+
+    .text-content p{
+        padding-top: 7vh;
+        padding-bottom: 10vh;
     }
 
     .img-content {
-      width: 48%;
-      padding-left: 1%;
+      width: 50%;
+      height: 80vh;
+      background-image: url(../img/Berlin4.jpg);
+      background-position: center;
+      background-size: cover;
 
       img {
-        border-radius: 10px;
+        border-radius: 0px;
       }
     }
   }
