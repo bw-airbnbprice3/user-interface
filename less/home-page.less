@@ -1,18 +1,22 @@
 .about {
   height: 80vh;
   width: 100vw;
-  padding-top: 10vh;
+  padding-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  .mobileHeightAuto();
 
-  .about-content {
+  .about-content, .about-header {
     width: 50vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 1vh;
+    @media @mobile {
+      width: 85%;
+    }
 
     img {
       height: 5vh;
@@ -26,9 +30,7 @@
 
 .home {
   height: 80vh;
-  @media @mobile {
-    height: 100%;
-  }
+  .mobileHeightAuto();
 
   .content-section {
     display: flex;

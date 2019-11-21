@@ -1,3 +1,8 @@
+@media only screen and (max-width: 500px) {
+  .mobileHeightAuto {
+    height: auto;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -142,9 +147,9 @@ body {
 body {
   height: 100vh;
 }
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   body {
-    height: 100%;
+    height: auto;
   }
 }
 h1,
@@ -166,103 +171,39 @@ h4 {
 p {
   font-size: 1.6rem;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 img {
   max-width: 100%;
   height: auto;
 }
-@media (min-width: 500px) {
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: solid lightgray 0.5px;
-    height: 10vh;
-    background-color: #885B5F;
-  }
-  .nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-  }
-  .nav-left {
-    width: 50%;
-    margin-left: 10vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    height: 10vh;
-  }
-  .nav-right {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    height: 10vh;
-    margin-right: 10vw;
-  }
-  h1 {
-    display: flex;
-    flex-direction: row;
-    justify-items: flex-start;
-    vertical-align: center;
-  }
-  a {
-    text-decoration: none;
-    padding-right: 5vw;
-    color: white;
-    font-size: 1.6rem;
-  }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid lightgray 0.5px;
+  height: 10vh;
+  background-color: #885b5f;
 }
-@media (min-width: 0px) and (max-width: 500px) {
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: solid lightgray 0.5px;
-    height: 10vh;
-    background-color: #885B5F;
-  }
-  .nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-  }
-  .nav-left {
-    width: 50%;
-    margin-left: 10vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    height: 10vh;
-  }
-  .nav-right {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    height: 10vh;
-    margin-right: 10vw;
-  }
-  h1 {
-    display: flex;
-    flex-direction: row;
-    justify-items: flex-start;
-    vertical-align: center;
-  }
-  a {
-    text-decoration: none;
-    padding-right: 5vw;
-    color: white;
-    font-size: 3rem;
-  }
+nav .nav-left {
+  width: 50%;
+  margin-left: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+nav .nav-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10vw;
+}
+nav .nav-right a {
+  padding-right: 5vw;
+  font-size: 1.6rem;
 }
 .footer {
   width: 100%;
@@ -273,6 +214,11 @@ img {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 500px) {
+  .footer {
+    z-index: 10;
+  }
+}
 .footer p {
   text-align: center;
   font-size: 1.6rem;
@@ -281,31 +227,45 @@ img {
 .about {
   height: 80vh;
   width: 100vw;
-  padding-top: 10vh;
+  padding-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
-.about .about-content {
+@media only screen and (max-width: 500px) {
+  .about {
+    height: auto;
+  }
+}
+.about .about-content,
+.about .about-header {
   width: 50vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 1vh;
 }
-.about .about-content img {
+@media only screen and (max-width: 500px) {
+  .about .about-content,
+  .about .about-header {
+    width: 85%;
+  }
+}
+.about .about-content img,
+.about .about-header img {
   height: 5vh;
 }
-.about .about-content a {
+.about .about-content a,
+.about .about-header a {
   padding: 0;
 }
 .home {
   height: 80vh;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .home {
-    height: 100%;
+    height: auto;
   }
 }
 .home .content-section {
@@ -314,7 +274,7 @@ img {
   align-items: center;
   height: 80vh;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
     height: auto;
@@ -326,7 +286,7 @@ img {
   padding-left: 10vw;
   padding-top: 10vh;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .home .content-section .text-content {
     padding: 0;
     margin: 10%;
@@ -334,7 +294,7 @@ img {
     height: auto;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .home .content-section .text-content h2 {
     font-size: 5rem;
   }
@@ -343,7 +303,7 @@ img {
   padding-top: 7vh;
   padding-bottom: 10vh;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .home .content-section .text-content p {
     font-size: 3rem;
   }
@@ -364,7 +324,7 @@ img {
   background-position: center;
   background-size: cover;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
     height: 50vh;
