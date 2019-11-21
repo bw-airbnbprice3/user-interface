@@ -287,17 +287,17 @@ img {
   align-items: center;
   justify-content: flex-start;
 }
-.about-content {
+.about .about-content {
   width: 50vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 1vh;
 }
-.about-content img {
+.about .about-content img {
   height: 5vh;
 }
-.about-content a {
+.about .about-content a {
   padding: 0;
 }
 .home {
@@ -339,100 +339,4 @@ img {
   background-image: url(../img/Berlin4.jpg);
   background-position: center;
   background-size: cover;
-}
-@media (min-width: 0px) and (max-width: 500px) {
-  .container-home {
-    height: 80vh;
-  }
-  .container-about {
-    height: 80vh;
-    width: 100vw;
-    padding-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .about-content {
-    width: 50vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1vh;
-  }
-  .about-content img {
-    height: 5vh;
-  }
-  .about-content a {
-    padding: 0;
-  }
-  .home .cta-img {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .home .cta-img img {
-    border-radius: 10px;
-  }
-  .home .content-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-  }
-  .home .content-section .text-content {
-    width: 90%;
-    height: 80vh;
-    padding-left: 10vw;
-    padding-top: 10vh;
-  }
-  .home .content-section .button-link {
-    font-size: 5rem;
-    border-radius: 7px;
-    background-color: #885b5f;
-    padding: 1.5vh;
-  }
-  .home .content-section .text-content p {
-    padding-top: 7vh;
-    padding-bottom: 10vh;
-  }
-  .home .content-section .img-content {
-    width: 50%;
-    height: 80vh;
-    background-image: url(../img/Berlin4.jpg);
-    background-position: center;
-    background-size: cover;
-    display: none;
-  }
-  .home .content-section .img-content img {
-    border-radius: 0px;
-  }
-  .home .inverse-content {
-    padding-bottom: 50px;
-    border-bottom: 2px solid #C0C0C0;
-  }
-  .home .inverse-content .text-content {
-    padding-left: 1%;
-    padding-right: 0;
-  }
-  .home .inverse-content .img-content {
-    padding-right: 1%;
-    padding-left: 0;
-  }
-  .home .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-  }
-  .home .content-destination img {
-    border-radius: 10px;
-  }
-  .home .content-pick {
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .home .content-pick .destination {
-    width: 30%;
-    margin-bottom: 30px;
-  }
 }
