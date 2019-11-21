@@ -303,19 +303,22 @@ img {
 .home {
   height: 80vh;
 }
-.home .cta-img {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.home .cta-img img {
-  border-radius: 10px;
+@media only screen and (max-width: 600px) {
+  .home {
+    height: 100%;
+  }
 }
 .home .content-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 80vh;
+}
+@media only screen and (max-width: 600px) {
+  .home .content-section {
+    flex-direction: column;
+    height: auto;
+  }
 }
 .home .content-section .text-content {
   width: 50%;
@@ -323,15 +326,36 @@ img {
   padding-left: 10vw;
   padding-top: 10vh;
 }
-.home .content-section .button-link {
-  font-size: 2rem;
-  border-radius: 7px;
-  background-color: #885b5f;
-  padding: 1vh;
+@media only screen and (max-width: 600px) {
+  .home .content-section .text-content {
+    padding: 0;
+    margin: 10%;
+    width: 85%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home .content-section .text-content h2 {
+    font-size: 5rem;
+  }
 }
 .home .content-section .text-content p {
   padding-top: 7vh;
   padding-bottom: 10vh;
+}
+@media only screen and (max-width: 600px) {
+  .home .content-section .text-content p {
+    font-size: 3rem;
+  }
+}
+.home .content-section .text-content .button-link {
+  font-size: 2rem;
+  border-radius: 7px;
+  background-color: #885b5f;
+  padding: 12px;
+}
+.home .content-section .text-content .button-link:hover {
+  box-shadow: 0 0 10px 1px white;
 }
 .home .content-section .img-content {
   width: 50%;
@@ -339,4 +363,10 @@ img {
   background-image: url(../img/Berlin4.jpg);
   background-position: center;
   background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+  .home .content-section .img-content {
+    width: 100%;
+    height: 50vh;
+  }
 }
